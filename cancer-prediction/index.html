@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cancer Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #1c1c1c;
+        text-align: center;
+      }
+
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #1c1c1c;
+        border-radius: 5px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      input[type="text"] {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+
+      button[type="submit"] {
+        background-color: #1c1c1c;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button[type="submit"]:hover {
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cancer Prediction</h1>
+    <form action="/predict" method="post">
+      <label for="radius_mean">Radius Mean:</label>
+      <input type="text" name="radius_mean" id="radius_mean" /><br />
+      <label for="texture_mean">Texture Mean:</label>
+      <input type="text" name="texture_mean" id="texture_mean" /><br />
+      <label for="perimeter_mean">Perimeter Mean:</label>
+      <input type="text" name="perimeter_mean" id="perimeter_mean" /><br />
+      <label for="area_mean">Area Mean:</label>
+      <input type="text" name="area_mean" id="area_mean" /><br />
+      <button type="submit">Predict</button>
+    </form>
+  </body>
+</html>

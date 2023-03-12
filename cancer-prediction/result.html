@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cancer Prediction</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #1c1c1c;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cancer Prediction Result</h1>
+    {% if prediction == 0 %}
+    <p>The patient is predicted to have benign cancer</p>
+    {% else %}
+    <p>The patient is predicted to have malignant cancer</p>
+    {% endif %}
+  </body>
+</html>
